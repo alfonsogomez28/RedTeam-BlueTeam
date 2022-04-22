@@ -44,7 +44,7 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
 #### HTTP Error Alert
-![http-error-alert](/images/alert1.PNG)
+![http-error-alert](/images/alert1.png)
 Alert 1 is implemented as follows:
   - **Metric**: `WHEN count() GROUPED OVER top 5 'http.response.status_code`
   - **Threshold**: `IS ABOVE 400`
@@ -52,7 +52,7 @@ Alert 1 is implemented as follows:
   - **Reliability**: This alert is highly reliable. When measuring error codes with status 400 and above, this will filter out the normal status responses.
 
 #### CPU Usage Monitor
-![cpu-usage-alert](/images/alert2.PNG)
+![cpu-usage-alert](/images/alert2.png)
 Alert 2 is implemented as follows:
   - **Metric**: `WHEN max() of system.process.cpu.total.pct OVER all documents`
   - **Threshold**: `IS ABOVE 0.5`
@@ -60,7 +60,7 @@ Alert 2 is implemented as follows:
   - **Reliability**: This alert has a medium reliability. This alert may, on occation flag as a false positive if user runs resource intense applications.
 
 #### HTTP Request Size Monitor
-![http-monitor](/images/alert3.PNG)
+![http-monitor](/images/alert3.png)
 Alert 3 is implemented as follows:
   - **Metric**: `WHEN sum() of http.request.bytes OVER all documents`
   - **Threshold**: `IS ABOVE 3500`
