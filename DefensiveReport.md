@@ -67,19 +67,18 @@ Alert 3 is implemented as follows:
   - **Vulnerability Mitigated**: Code injection in requests or denial of service attack (ex: CRLF, DDoS and XSS)
   - **Reliability**: This alert has a medium reliability. It may cause a false positive if requests are legitimate traffic.
 
-_TODO Note: Explain at least 3 alerts. Add more if time allows._
-
-### Suggestions for Going Further (Optional)
-_TODO_: 
-- Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
+### Suggestions for Going Further
 
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
+
 - Vulnerability 1
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
+  - **Patch**: Wordpress Core updates and hardening
+  - **Why It Works**: By installing latest Wordpress updates, it can fix security issues and known vulnerabilities. Also Wordpress can be hardenened by using tools like Wordfence and disabling unused features and plugins. Additionally, if REST API is enabled, but not needed, WPScan takes advantage of this and is used to enumerate Wordpress. Disabling this feature can reduce this vulnerability.
+
 - Vulnerability 2
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
+  - **Patch**: Antivirus/Antimalware software
+  - **Why It Works**: High CPU usage is usually a good indicator that the device has been infected with malware or a keylogger virus/software. Having a good AV product installed on the host device can help mitigate this type of attack.
+
 - Vulnerability 3
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
+  - **Patch**: Deploy a WAF (Web Application Firewall)
+  - **Why It Works**: WAFs are good at detecting, blocking and sanitizing HTTP traffic. Security rules can be configured to filter out specific traffic patterns that are consistent with attacks such as SQL-Injections, XSS, and DDoS.
