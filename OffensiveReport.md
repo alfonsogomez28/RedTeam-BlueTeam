@@ -33,8 +33,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - command: `wpscan --url http://192.168.1.110/wordpress -u`
       - Wordpress enumeration found usernames `michael` and `steven`
       - Guessing password to both using obvious possible guess found password for user which was `michael`
-      - By searching through directories and files, `flag1` was found in `/var/www/html/service.html`
-      
+      - By searching through directories and files, `flag1` was found in `/var/www/html/service.html` <br>
+      ![flag1](/images/flag1.png) <br>
   - `flag2.txt`: fc3fd58dcdad9ab23faca6e9a3e581c
     - **Exploit Used**
       - Using the same method of searching through the directories and files, `flag2` was found in `/var/www/flag2.txt`
