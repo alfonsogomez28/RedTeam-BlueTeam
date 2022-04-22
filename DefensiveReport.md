@@ -30,8 +30,8 @@ The following machines were identified on the network:
 - Kali
   - **Kali Linux**:
   - **Attacking Machine**:
-  - **192.168.1.90**:
-
+  - **192.168.1.90**: <br><br>
+![network](/images/network.png) <br>
 ### Description of Targets
 
 The target of this attack was: `Target1` at IP address: 192.168.1.110.
