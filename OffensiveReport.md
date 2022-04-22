@@ -46,9 +46,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - Using the command `mysql -u root -p'R@v3nSecurity' -h localhost` we can now login to MySQL
       - Once in MySQL, you can see all databases by using the command `show databases;`, then running the command to select the database in question `use wordpress;`
       - Once in the wordpress database, tables can viewed by using command `show tables;`
-      - We see the wp_posts table we can run `select * from wp_posts;` and now have `flag3`
-    
-      - `flag4.txt`: 715dea6c055b9fe3337544932f2941ce
+      - We see the wp_posts table we can run `select * from wp_posts;` and now have `flag3` <br>
+    ![flag3](/images/flag3.PNG) <br>
+   - `flag4.txt`: 715dea6c055b9fe3337544932f2941ce
     - **Exploit Used**
       - Using the same database, we can now get view entries in the wp_users table by running `select * from wp_users;`
       - We can see the password hashes for both users, we can save those hashes in a txt file using the format: `user1:$Passwordhash1` and save it as `wp_hashes.txt`
@@ -56,4 +56,5 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - SSH can be used to get into the target machine, command: `ssh steven@192.168.1.110` and entering the password when prompted
       - Once logged in we can see what privileges the user has (command: `ls -l`), which tells us that steven can run python scripts
       - One vulnerability we can use is spawning a root terminal with command: `sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’`
-      - Success! now we can see `flag4.txt` in the root folder
+      - Success! now we can see `flag4.txt` in the root folder <br>
+    ![flag4](/images/flag4.PNG) <br>
