@@ -37,8 +37,13 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   ![flag1](/images/flag1.PNG) <br>
   - `flag2.txt`: fc3fd58dcdad9ab23faca6e9a3e581c
     - **Exploit Used**
+<<<<<<< HEAD
       - Using the same method of searching through the directories and files, `flag2` was found in `/var/www/flag2.txt`
   
+=======
+      - Using the same method of searching through the directories and files, `flag2` was found in `/var/www/flag2.txt` <br>
+  ![flag2](/images/flag2.PNG) <br>
+>>>>>>> 8e2c2f760b5a760f8080ddec5c7a65abdec72ab2
     - `flag3.txt`: afc01ab56b50591e7dccf93122770cd2
     - **Exploit Used**
       - One of the important files to search for is the `wp-config.php` file which gives details of how worpress is configured on the server
