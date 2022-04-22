@@ -38,7 +38,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - `flag2.txt`: fc3fd58dcdad9ab23faca6e9a3e581c
     - **Exploit Used**
       - Using the same method of searching through the directories and files, `flag2` was found in `/var/www/flag2.txt`
-      - 
+  
     - `flag3.txt`: afc01ab56b50591e7dccf93122770cd2
     - **Exploit Used**
       - One of the important files to search for is the `wp-config.php` file which gives details of how worpress is configured on the server
