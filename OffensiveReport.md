@@ -9,7 +9,7 @@
 Nmap scan results for each machine reveal the below services and OS details:
 
 `nmap -Pn -sV -O 192.168.1.110`
-`INSERT SS`
+![nmap scan](/images/nmapscan.png)
 This scan identifies the services below as potential points of entry:
 - Target 1
   - Port 22 - SSH
