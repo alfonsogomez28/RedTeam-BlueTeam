@@ -44,7 +44,7 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
 #### HTTP Error Alert
-![http-error-alert](/images/http-error-alert.png
+![http-error-alert](/images/http-error-alert.png)
 Alert 1 is implemented as follows:
   - **Metric**: `WHEN count() GROUPED OVER top 5 'http.response.status_code`
   - **Threshold**: `IS ABOVE 400`
