@@ -8,7 +8,6 @@
 - Suggestions for Going Further
 
 ### Network Topology
-_TODO: Fill out the information below._
 
 The following machines were identified on the network:
 - ELK Server
