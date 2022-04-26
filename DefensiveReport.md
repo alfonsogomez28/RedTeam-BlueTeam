@@ -45,7 +45,7 @@ Traffic to these services should be carefully monitored. To this end, we have im
 #### HTTP Error Alert
 ![http-error-alert](/images/alert1.png)
 Alert 1 is implemented as follows:
-  - **Metric**: `WHEN count() GROUPED OVER top 5 'http.response.status_code`
+  - **Metric**: `WHEN count() GROUPED OVER top 5 'http.response.status_code'`
   - **Threshold**: `IS ABOVE 400`
   - **Vulnerability Mitigated**: Enumeration or Brute Force Attack
   - **Reliability**: This alert is highly reliable. When measuring error codes with status 400 and above, this will filter out the normal status responses.
