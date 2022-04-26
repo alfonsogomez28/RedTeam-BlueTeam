@@ -41,7 +41,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   ![flag2](/images/flag2.PNG) <br>
     - `flag3.txt`: afc01ab56b50591e7dccf93122770cd2
     - **Exploit Used**
-      - One of the important files to search for is the `wp-config.php` file which gives details of how worpress is configured on the server
+      - One of the important files to search for is the `wp-config.php` file which gives details of how Wordpress is configured on the server
       - `wp-config.php` was found in `/var/www/html/wordpress` using `cat wp-config.php` show credentials to login to MySQL database: root:R@v3nSecurity
       - Using the command `mysql -u root -p'R@v3nSecurity' -h localhost` we can now login to MySQL
       - Once in MySQL, you can see all databases by using the command `show databases;`, then running the command to select the database in question `use wordpress;`
