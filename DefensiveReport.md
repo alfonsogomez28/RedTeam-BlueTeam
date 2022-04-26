@@ -56,7 +56,7 @@ Alert 2 is implemented as follows:
   - **Metric**: `WHEN max() of system.process.cpu.total.pct OVER all documents`
   - **Threshold**: `IS ABOVE 0.5`
   - **Vulnerability Mitigated**: Malware or keylogger taking up system resources
-  - **Reliability**: This alert has a medium reliability. This alert may, on occation flag as a false positive if user runs resource intense applications.
+  - **Reliability**: This alert has a medium reliability. This alert may, on occasion flag as a false positive if user runs resource intense applications.
 
 #### HTTP Request Size Monitor
 ![http-monitor](/images/alert3.png)
@@ -72,7 +72,7 @@ The logs and alerts generated during the assessment suggest that this network is
 
 - Vulnerability 1
   - **Patch**: Wordpress Core updates and hardening
-  - **Why It Works**: By installing latest Wordpress updates, it can fix security issues and known vulnerabilities. Also Wordpress can be hardenened by using tools like Wordfence and disabling unused features and plugins. Additionally, if REST API is enabled, but not needed, WPScan takes advantage of this and is used to enumerate Wordpress. Disabling this feature can reduce this vulnerability.
+  - **Why It Works**: By installing latest Wordpress updates, it can fix security issues and known vulnerabilities. Also Wordpress can be hardened by using tools like Wordfence and disabling unused features and plugins. Additionally, if REST API is enabled, but not needed, WPScan takes advantage of this and is used to enumerate Wordpress. Disabling this feature can reduce this vulnerability.
 
 - Vulnerability 2
   - **Patch**: Antivirus/Antimalware software
