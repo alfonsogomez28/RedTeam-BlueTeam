@@ -1,10 +1,35 @@
 # Red Team: Summary of Operations
 
 ## Table of Contents
+- Network Topology
 - Exposed Services
 - Critical Vulnerabilities
 - Exploitation
 
+### Network Topology
+
+The following machines were identified on the network:
+- ELK Server
+  - **Ubuntu Linux**:
+  - **ELK Cluster**:
+  - **192.168.1.100**:
+- Capstone
+  - **Ubuntu Linux**:
+  - **Capstone**:
+  - **192.168.1.105**:
+- TARGET1
+  - **Debian Linux**:
+  - **Web Server**:
+  - **192.168.1.110**:
+- TARGET2
+  - **Debian Linux**:
+  - **Web Server**:
+  - **192.168.1.115**:
+- Kali
+  - **Kali Linux**:
+  - **Attacking Machine**:
+  - **192.168.1.90**: <br><br>
+![network](/images/network.png) <br>
 ### Exposed Services
 Nmap scan results for each machine reveal the below services and OS details:
 
