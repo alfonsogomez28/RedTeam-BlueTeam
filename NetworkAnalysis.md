@@ -1,5 +1,7 @@
 # Network Analysis
 
+## This following is a malicous network traffic exercise to showcase the network protocol analyzer tool, Wireshark. 
+
 ### Time Thieves
 At least two users on the network have been wasting time on YouTube. Usually, IT wouldn't pay much mind to this behavior, but it seems these people have created their own web server on the corporate network. So far, Security knows the following about these time thieves:
 
